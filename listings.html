@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listings & Property Search | Sanjeev Kataria Realtor</title>
+<meta name="description" content="Search current Southern California listings and view Sanjeev Kataria's active and past listings via CRMLS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Sanjeev <span>Kataria</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listings.html" class="active">Listings</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Listings &amp; Property Search</h1>
+  <p>Browse Sanjeev's featured listings, search all active Southern California properties, or look up his listings directly through CRMLS.</p>
+</section>
+
+<!-- ===== FEATURED LISTINGS ===== -->
+<section class="listings" id="featured" style="padding-top:4rem;">
+  <p class="eyebrow center">Featured Listings</p>
+  <h2 class="center">Current &amp; Recent Properties</h2>
+  <p class="section-sub center">A sample of homes represented by Sanjeev. Replace with live MLS data or your own listings.</p>
+  <div class="listing-grid">
+    <div class="listing-card">
+      <div class="listing-img listing-img-1"></div>
+      <div class="listing-body">
+        <span class="listing-price">$1,190,000</span>
+        <h3>18945 Northern Dancer Ln</h3>
+        <p>Yorba Linda, CA</p>
+        <span class="listing-tag">For Sale</span>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-img listing-img-2"></div>
+      <div class="listing-body">
+        <span class="listing-price">$1,549,900</span>
+        <h3>23 Galeana</h3>
+        <p>Foothill Ranch, CA</p>
+        <span class="listing-tag">For Sale</span>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-img listing-img-3"></div>
+      <div class="listing-body">
+        <span class="listing-price">Sold</span>
+        <h3>Recent Closing</h3>
+        <p>Anaheim Hills, CA</p>
+        <span class="listing-tag listing-tag-sold">Sold</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IDX EMBEDS ===== -->
+<section class="idx" id="search">
+  <p class="eyebrow center">Search Live Listings</p>
+  <h2 class="center">CRMLS Property Search</h2>
+  <p class="section-sub center">Powered by CRMLS. If a search tool doesn't load below (some MLS pages block embedding), use the "Open in New Window" button instead.</p>
+
+  <div class="idx-section">
+    <div class="idx-block">
+      <div class="idx-block-header">
+        <div>
+          <h3>Sanjeev's Listings</h3>
+          <p>Active and past listings represented by Sanjeev Kataria</p>
+        </div>
+        <a class="idx-open-link" href="https://www.crmls.org/servlet/lDisplayListings?AGENT=OCKATASAN&LA=EN" target="_blank" rel="noopener">Open in New Window ↗</a>
+      </div>
+      <div class="idx-frame-wrap">
+        <iframe src="https://www.crmls.org/servlet/lDisplayListings?AGENT=OCKATASAN&LA=EN" title="Sanjeev Kataria's CRMLS Listings" loading="lazy"></iframe>
+      </div>
+      <p class="idx-fallback-note">If this search doesn't display above, click "Open in New Window" — CRMLS occasionally blocks embedded framing.</p>
+    </div>
+
+    <div class="idx-block">
+      <div class="idx-block-header">
+        <div>
+          <h3>General Property Search</h3>
+          <p>Search all active Southern California listings via CRMLS</p>
+        </div>
+        <a class="idx-open-link" href="https://www.crmls.org/servlet/lDisplayListings?LA=EN" target="_blank" rel="noopener">Open in New Window ↗</a>
+      </div>
+      <div class="idx-frame-wrap">
+        <iframe src="https://www.crmls.org/servlet/lDisplayListings?LA=EN" title="CRMLS General Property Search" loading="lazy"></iframe>
+      </div>
+      <p class="idx-fallback-note">If this search doesn't display above, click "Open in New Window" — CRMLS occasionally blocks embedded framing.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <p class="logo footer-logo">Sanjeev <span>Kataria</span></p>
+      <p>Realtor® · Alta Realty Group CA, Inc.<br>DRE #02044107</p>
+    </div>
+    <div>
+      <p><a href="tel:+19492037522">(949) 203-7522</a></p>
+      <p><a href="mailto:sanjeevocrealtor@gmail.com">sanjeevocrealtor@gmail.com</a></p>
+      <p>3416 Via Lido, Suite E, Newport Beach, CA 92663</p>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Sanjeev Kataria. All rights reserved. Equal Housing Opportunity.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

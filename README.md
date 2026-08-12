@@ -6,17 +6,18 @@ A multi-page, responsive website for Sanjeev Kataria, Realtor® with Alta Realty
 - `index.html` — Home (hero, trust stats, about teaser, track record, areas served)
 - `about.html` — Full bio, specialties, languages, track record, areas served
 - `listings.html` — Featured listing cards + two embedded CRMLS IDX search widgets
-- `communities.html` — Featured Southern California communities, grouped by region (Orange County, Inland Empire, LA County, San Diego County, Ventura County), styled after archanadarekar.com's community grid
+- `communities.html` — Featured master-planned communities, grouped by region: Orange County (Irvine, Tustin, Anaheim Hills), Riverside County (Corona, Temecula, Murrieta), and San Diego County — styled after archanadarekar.com's community grid
 - `testimonials.html` — Client testimonials and rating
 - `contact.html` — Contact info and inquiry form
 
 All pages share the same `styles.css` and `script.js`, and the same nav/footer.
 
 ## Communities page
-Styled to match the dark, photo-grid "Featured Communities" layout on archanadarekar.com — image tile + name underneath, grouped here by region since the list spans all of Southern California rather than one city. Currently uses colored gradient placeholders (`cbg-1` through `cbg-8` in `styles.css`) instead of real photos. To swap in real photos:
+Styled to match the dark, photo-grid "Featured Communities" layout on archanadarekar.com — image tile + specific community name (with the city as a small subtitle) underneath, grouped here by region. This lists actual named master-planned communities/villages (e.g. Great Park, Portola Springs, Columbus Grove, Eagle Glen, 4S Ranch) rather than city names, matching the reference site's approach. Currently uses colored gradient placeholders (`cbg-1` through `cbg-8` in `styles.css`) instead of real photos. To swap in real photos:
 1. Add community entrance/monument photos to `assets/communities/` (see the README.txt there).
-2. In `communities.html`, replace `<div class="community-photo cbg-1"></div>` with `<div class="community-photo" style="background-image:url('assets/communities/newport-beach.jpg');"></div>` for each card.
+2. In `communities.html`, replace `<div class="community-photo cbg-1"></div>` with `<div class="community-photo" style="background-image:url('assets/communities/great-park.jpg');"></div>` for each card.
 3. Each card currently links to `listings.html#search`. If your IDX provider supports area-filtered search URLs, swap those in per community instead.
+4. Double-check the community list against current market conditions — boundaries and popular names can shift over time.
 
 ## IDX embeds (listings.html)
 Two CRMLS searches are embedded as iframes, each with a fallback "Open in New Window" button and note:

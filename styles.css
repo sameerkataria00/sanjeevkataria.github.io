@@ -239,7 +239,7 @@ section { padding: 5.5rem 6vw; }
 }
 .community-card:hover .community-photo { filter: brightness(1.15); }
 .community-name {
-  padding: 0.9rem 0.7rem;
+  padding: 0.9rem 0.7rem 0.15rem;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -248,6 +248,15 @@ section { padding: 5.5rem 6vw; }
   transition: color 0.2s ease;
 }
 .community-card:hover .community-name { color: var(--gold); }
+.community-city {
+  display: block;
+  padding: 0 0.7rem 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: #8b8778;
+}
 .communities-note {
   max-width: 700px;
   margin: 0 auto 3.5rem;

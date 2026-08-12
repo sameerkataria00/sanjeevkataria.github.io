@@ -6,10 +6,17 @@ A multi-page, responsive website for Sanjeev Kataria, Realtor® with Alta Realty
 - `index.html` — Home (hero, trust stats, about teaser, track record, areas served)
 - `about.html` — Full bio, specialties, languages, track record, areas served
 - `listings.html` — Featured listing cards + two embedded CRMLS IDX search widgets
+- `communities.html` — Featured Southern California communities, grouped by region (Orange County, Inland Empire, LA County, San Diego County, Ventura County), styled after archanadarekar.com's community grid
 - `testimonials.html` — Client testimonials and rating
 - `contact.html` — Contact info and inquiry form
 
 All pages share the same `styles.css` and `script.js`, and the same nav/footer.
+
+## Communities page
+Styled to match the dark, photo-grid "Featured Communities" layout on archanadarekar.com — image tile + name underneath, grouped here by region since the list spans all of Southern California rather than one city. Currently uses colored gradient placeholders (`cbg-1` through `cbg-8` in `styles.css`) instead of real photos. To swap in real photos:
+1. Add community entrance/monument photos to `assets/communities/` (see the README.txt there).
+2. In `communities.html`, replace `<div class="community-photo cbg-1"></div>` with `<div class="community-photo" style="background-image:url('assets/communities/newport-beach.jpg');"></div>` for each card.
+3. Each card currently links to `listings.html#search`. If your IDX provider supports area-filtered search URLs, swap those in per community instead.
 
 ## IDX embeds (listings.html)
 Two CRMLS searches are embedded as iframes, each with a fallback "Open in New Window" button and note:
@@ -29,7 +36,7 @@ Two CRMLS searches are embedded as iframes, each with a fallback "Open in New Wi
 
 ## Publishing to GitHub Pages
 1. Create a new repository on GitHub (e.g. `sanjeev-kataria-website`), or use an existing one.
-2. Upload these files (`index.html`, `about.html`, `listings.html`, `testimonials.html`, `contact.html`, `styles.css`, `script.js`, `assets/`) to the repository — either via the GitHub web upload UI or `git push`.
+2. Upload these files (`index.html`, `about.html`, `listings.html`, `communities.html`, `testimonials.html`, `contact.html`, `styles.css`, `script.js`, `assets/`) to the repository — either via the GitHub web upload UI or `git push`.
 3. In the repository, go to **Settings → Pages**.
 4. Under "Build and deployment", set **Source** to "Deploy from a branch", choose the `main` branch and `/ (root)` folder, then click **Save**.
 5. GitHub will publish the site within a minute or two. If the repo is named `<username>.github.io`, it appears at `https://<username>.github.io/`; otherwise at `https://<username>.github.io/<repo-name>/`.
